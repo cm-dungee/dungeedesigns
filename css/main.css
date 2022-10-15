@@ -1,0 +1,1126 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   BASE STYLES
+   ========================================================================== */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-size: 1rem;
+	background-color: #D0D0D0;
+	font-family: 'IBM Plex Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5em;
+	width: 100%;
+	height: 100vh;
+}
+
+.outer-container {
+	background-color: #FFF;
+	box-shadow: -20px 20px 20px #282828;
+	border: 5px solid #00BFFF;
+	width: 97%;
+	height: 97vh;
+	position: fixed;
+}
+
+.inner-container {
+	border: 5px solid #000;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* ==========================================================================
+   ROW STYLES
+   ========================================================================== */
+
+.row {
+	display: flex;
+	width: 100%;
+	position: relative;
+}
+
+/*------------TOP ROW------------*/
+.header-wrapper {
+	height: 18%;
+}
+#stem-row {
+	display: flex;
+	height: 40%;
+}
+
+.blank-box1,
+.stem-box {
+	flex-basis: 50%;
+	height: 100%;
+}
+
+.stem-box {
+	display: flex;
+}
+
+.left,
+.right {
+	flex-basis: 50%;
+	height: 100%;
+}
+
+.left {
+	border-right: 2.5px solid #000;
+}
+
+.right {
+	border-left: 2.5px solid #000;
+}
+
+/*------------HEADER ROW------------*/
+#row-1 {
+	height: 60%;
+	position: relative;
+}
+
+.blank-box2,
+.header {
+	height: 100%;
+}
+
+.blank-box2 {
+	flex-basis: 60%;
+}
+
+.header {
+	flex-basis: 35%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 5px solid #000;
+	font-size: 1.5rem;
+	font-weight: 900;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.header a:link {
+	color: #222;
+	text-decoration: none;
+}
+
+.header a:visited {
+	color: #222;
+}
+
+.header a:hover {
+	color: #00BFFF;
+}
+
+.header a:active {
+	color: #D0D0D0;
+}
+
+.blank-box3 {
+	flex-basis: 5%;
+}
+
+/*------------GREETING ROW------------*/
+#row-2 {
+	height: 14%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.heading {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.heading h1 {
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 3rem;
+	margin: 0;
+	padding-left: 2em;
+}
+
+.heading h2 {
+	font-size: 2rem;
+	letter-spacing: 8px;
+	padding-left: 20em;
+}
+
+/*------------CITY ROW------------*/
+#row-3 {
+	height: 56%;
+	position: relative;
+}
+
+
+
+/*------------FOOTER ROW------------*/
+#row-4 {
+	height: 12%;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.stem-box2 {
+	flex-basis: 10%;
+}
+
+.top,
+.bottom {
+	flex-basis: 50%;
+	height: 100%;
+}
+
+.top {
+	height: 50%;
+	border-bottom: 2.5px solid #000;
+}
+
+.bottom {
+	height: 50%;
+	border-top: 2.5px solid #000;
+}
+
+.footer {
+	height: 85%;
+	flex-basis: 50%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border: 5px solid #000;
+	font-size: 1.2rem;
+	font-weight: 900;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social p {
+	margin-right: .5em;
+}
+
+.fa-github {
+	color: #222;
+}
+
+
+.blank-box4 {
+	flex-basis: 40%;
+}
+
+/* ==========================================================================
+   BIO PAGE STYLES
+   ========================================================================== */
+.bio-wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1em 0 2em 0;
+}
+
+.bio {
+	width: 80%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+.company-name {
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+}
+
+.company-name h1 {
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 3rem;
+	text-transform: capitalize;
+}
+
+.paragraph1, .paragraph2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+} 
+
+.paragraph1 {
+	align-items: flex-start;
+	margin-bottom: 1em;
+}
+
+.paragraph2 {
+	align-items: flex-end;
+}
+
+.bio p {
+	width: 60%;
+	padding: .5em;
+	font-size: 1.1rem;
+	font-weight: 800;
+	text-align: justify;
+	line-height: 1.7em;
+	border: 5px solid #000;
+}
+
+#me {
+	border: 5px solid #000;
+}
+
+#janis {
+	border: 5px solid #000;
+}
+
+.my-name {
+	font-family:'IBM Plex Mono', monospace;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.bio p,
+#me, #janis {
+	box-shadow: 10px 10px #00BFFF;
+}
+
+/* ==========================================================================
+   PORTFOLIO PAGE STYLES
+   ========================================================================== */
+.portfolio-wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1em 0 2em 0;
+}
+
+.portfolio {
+	width: 70%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.portfolio-heading h2 {
+	font-family: 'IBM Plex Mono', monospace;
+	margin-bottom: 1em;
+}
+
+.my-work {
+	width: 80%;
+	background-color: white;
+	box-shadow: 10px 10px #00BFFF;
+	border: 5px solid #000;
+}
+
+.my-work img {
+	width: 100%;
+	height: auto;
+}
+
+.caption {
+	font-weight: 800;
+	font-size: 1.1rem;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+.coming-soon {
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 1.5rem;
+	margin-top: 2em;
+}
+
+/* ==========================================================================
+   SERVICES PAGE STYLES
+   ========================================================================== */
+.services-wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1em 0 2em 0;
+}
+
+.services {
+	width: 90%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.tiers {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 2em;
+}
+
+.tiers div {
+	width: 100%;
+	border: 2.5px solid #000;
+}
+
+#white-bg {
+	color: #00BFFF;
+	text-shadow: 1px 1px #000;
+}
+
+#black-bg {
+	background-color: #000;
+	color: #FFF;
+}
+
+#blue-bg {
+	background-color: #00BFFF;
+}
+
+.tiers ul {
+	padding: .5em;
+}
+
+.tiers p {
+	padding: 1em;
+}
+
+.tiers li {
+	width: 100%;
+	list-style-position: inside;
+	list-style-type: square;
+	padding-left: 2em;
+}
+
+.tier-title {
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 1.1rem;
+	font-weight: 800;
+	border-bottom: 2.5px solid #000;
+}
+
+.contact {
+	font-size: 1.5em;
+	margin-top: 2.5em;
+	text-align: center;
+}
+
+.contact a:link {
+	color: #222;
+	text-decoration: none;
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 900;
+}
+
+.contact a:visited {
+	color: #222;
+}
+
+.contact a:hover {
+	color: #00BFFF;
+}
+
+.contact a:active {
+	color: #D0D0D0;
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+@media (min-width: 1025px) and (max-width: 1200px) {
+	.header {
+		font-size: 1.3rem;
+	}
+	.heading {
+		width: 100%;	
+	}
+	.heading h1 {
+		font-size: 2rem;
+	}
+	.heading h2 {
+		font-size: 1.5rem;
+	}
+	.bio-wrapper {
+		margin-top: .5em;
+	}
+	.tier-title {
+		font-size: 1rem;
+	}
+	.contact {
+		font-size: 1.3rem;
+	}
+	.footer {
+		font-size: 1.1rem;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	#stem-row {
+		height: 40%;
+	}
+	#row-1 {
+		height: 60%;
+	}
+	.blank-box2 {
+		flex-basis: 50%;
+	}
+	.header {
+		flex-basis: 45%;
+		font-size: 1.2rem;
+	}
+	.heading {
+		width: 100%;	
+	}
+	.heading h1 {
+		font-size: 2rem;
+		padding-left: .5em;
+		padding-top: .2em;
+	}
+	.heading h2 {
+		font-size: 1.5rem;
+		padding-left: 4em;
+	}
+	.bio-wrapper {
+		margin-top: .5em;
+	}
+	.bio-wrapper h1 {
+		font-size: 2rem;
+	}
+	.bio-wrapper p {
+		font-size: 1rem;
+	}
+	.paragraph2 {
+		margin-bottom: 1em;
+	}
+	.company-name h1 {
+		font-size: 2rem;
+	}
+	.portfolio-heading h2 {
+		font-size: 1.4rem;
+	}
+	.coming-soon p {
+		font-size: 1.2rem;
+	}
+	.services {
+		width: 95%;
+	}
+	.tiers, .tier-title {
+		font-size: .9rem;
+	}
+	.tiers p {
+		padding: .5em;
+	}
+	.contact {
+		font-size: 1rem;
+	}
+	.footer {
+		height: 80%;
+		font-size: 1rem;
+		justify-content: space-evenly;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+	#stem-row {
+		height: 30%;
+	}
+	#row-1 {
+		height: 70%;
+	}
+	.blank-box2 {
+		flex-basis: 25%;
+	}
+	.header {
+		flex-basis: 70%;
+		font-size: 1.3rem;
+	}
+	#row-2 {
+		height: 16%;
+	}
+	.heading {
+		width: 100%;
+		justify-content: center;	
+		align-items: center;	
+		margin-top: 2%;
+	}
+	.heading h1 {
+		font-size: 1.5rem;
+		padding-top: .5em;
+		padding-left: 0;
+	}
+	.heading h2 {
+		font-size: 1.2rem;
+		letter-spacing: 4px;
+		padding: 0;
+	}
+	.bio-wrapper h1 {
+		font-size: 1.5rem;
+	}
+	.bio-wrapper p {
+		width: 100%;
+		font-size: .9rem;
+	}
+	.paragraph1, .paragraph2 {
+		flex-direction: column;
+	}
+	.portfolio {
+		width: 80%;
+	}
+	.company-name h1 {
+		font-size: 1.9rem;
+	}
+	.portfolio-heading h2 {
+		font-size: 1.3rem;
+		text-align: center;
+	}
+	.coming-soon p {
+		font-size: 1.2rem;
+	}
+	.my-work {
+		width: 100%;
+	}
+	#row-3 {
+		height: 49%;
+		margin-top: 4%;
+	}
+	#row-4 {
+		margin-top: 1%;
+	}
+	.services {
+		width: 75%;
+	}
+	.tiers {
+		flex-direction: column;
+	}
+	.tiers, .tier-title {
+		font-size: 1rem;
+	}
+	.tiers p {
+		padding: 1em;
+	}
+	.contact {
+		font-size: 1.1rem;
+	}
+	.footer {
+		flex-basis: 70%;
+		font-size: 1rem;
+		justify-content: space-evenly;
+	}
+	.blank-box4 {
+		flex-basis: 20%;
+		display: none;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	#stem-row {
+		height: 40%;
+	}
+	#row-1 {
+		height: 60%;
+	}
+	.blank-box2 {
+		display: none;
+	}
+	.header {
+		flex-basis: 80%;
+		font-size: 1rem;
+		margin-left: 13%;
+	}
+	.blank-box3 {
+		display: none;
+	}
+	#row-2 {
+		height: 16%;
+	}
+	.heading {
+		width: 100%;
+		justify-content: center;	
+		align-items: center;	
+		margin-top: 2%;
+	}
+	.heading h1 {
+		font-size: 1.1rem;
+		padding-top: .5em;
+		padding-left: 0;
+	}
+	.heading h2 {
+		font-size: .9rem;
+		letter-spacing: 1.5px;
+		padding: 0;
+	}
+	#row-3 {
+		height: 40%;
+		margin-top: 4%;
+	}
+	.bio-wrapper h1 {
+		font-size: 1.1rem;
+	}
+	.bio-wrapper p {
+		width: 100%;
+		font-size: .8rem;
+	}
+	.paragraph1, .paragraph2 {
+		flex-direction: column;
+	}
+	.portfolio {
+		width: 90%;
+	}
+	.company-name h1 {
+		font-size: 1.6rem;
+	}
+	.portfolio-heading h2 {
+		font-size: 1rem;
+		text-align: center;
+	}
+	.caption {
+		font-size: .8rem;
+	}
+	.coming-soon p {
+		font-size: .9rem;
+	}
+	.my-work {
+		width: 100%;
+	}
+	#row-4 {
+		height: 20%;
+		margin-top: 5%;
+	}
+	.services {
+		width: 90%;
+	}
+	.tiers {
+		flex-direction: column;
+	}
+	.tiers, .tier-title {
+		font-size: .8rem;
+	}
+	.tiers p {
+		padding: .3em;
+	}
+	.contact {
+		font-size: .8rem;
+	}
+	.footer {
+		height: 65%;
+		font-size: 1rem;
+		flex-basis: 80%;
+	}
+	.blank-box4 {
+		display: none;
+	}
+	.logo img {
+		width: 65px;
+		height: 25px;
+	}
+	.social {
+		padding: 0;
+	}
+	.social p {
+		font-size: .7rem;
+	}
+}
+
+
+@media (min-width: 240px) and (max-width: 319px) {
+	#stem-row {
+		height: 40%;
+	}
+	#row-1 {
+		height: 60%;
+	}
+	.blank-box2 {
+		display: none;
+	}
+	.header {
+		flex-basis: 90%;
+		font-size: .8rem;
+		margin-left: 6%;
+	}
+	.blank-box3 {
+		display: none;
+	}
+	#row-2 {
+		height: 10%;
+	}
+	.heading {
+		width: 100%;
+		justify-content: center;	
+		align-items: center;	
+		margin-top: 2%;
+	}
+	.heading h1 {
+		font-size: .8rem;
+		padding-top: .5em;
+		padding-left: 0;
+	}
+	.heading h2 {
+		font-size: .7rem;
+		letter-spacing: 1.1px;
+		padding: 0;
+	}
+	.bio-wrapper h1 {
+		font-size: 1.1rem;
+	}
+	.bio-wrapper p {
+		width: 100%;
+		font-size: .8rem;
+	}
+	.paragraph1, .paragraph2 {
+		flex-direction: column;
+	}
+	.portfolio {
+		width: 90%;
+	}
+	.company-name h1 {
+		font-size: 1.6rem;
+	}
+	.portfolio-heading h2 {
+		font-size: 1rem;
+		text-align: center;
+	}
+	.caption {
+		font-size: .8rem;
+	}
+	.coming-soon p {
+		font-size: .9rem;
+	}
+	.my-work {
+		width: 100%;
+	}
+	#row-3 {
+		height: 40%;
+		margin-top: 4%;
+	}
+	#row-4 {
+		height: 20%;
+		margin-top: 5%;
+	}
+	.services {
+		width: 98%;
+	}
+	.tiers {
+		flex-direction: column;
+	}
+	.tiers, .tier-title {
+		font-size: .6rem;
+	}
+	.tiers p {
+		padding: .15em;
+	}
+	.contact {
+		font-size: .6rem;
+	}
+	.footer {
+		height: 65%;
+		font-size: 1rem;
+		flex-basis: 80%;
+		flex-direction: column;
+	}
+	.blank-box4 {
+		display: none;
+	}
+	.logo img {
+		width: 65px;
+		height: 25px;
+	}
+	.social {
+		padding: 0;
+	}
+	.social p {
+		font-size: .7rem;
+	}
+}
+
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+/* @media only screen and (min-width: 35em) { */
+  /* /* Style adjustments for viewports that meet the condition */ 
+/* } */
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
